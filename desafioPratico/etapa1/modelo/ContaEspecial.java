@@ -1,9 +1,9 @@
 package etapa1.modelo;
 
 public class ContaEspecial extends Conta{
-private int limite = 16000;
+private int limite;
 
-public ContaEspecial(int numero, int saldo, int limite) {
+public ContaEspecial(int numero, int saldo) {
 	super(numero, saldo);
 	this.limite = limite;
 }
@@ -17,4 +17,5 @@ public ContaEspecial(int numero, int saldo, int limite) {
 			System.out.println("Desculpe, não há saldo suficiente.");
 		}
 	}
+	
 }
